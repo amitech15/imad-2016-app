@@ -23,7 +23,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'folder','image'));
 });
 */
-app.get('/ui/:folder/1.jpg', function (req, res) {
+app.get('/ui/:folder/1.JPG', function (req, res) {
     var folder = req.paramps.folder;
   res.sendFile(path.join(__dirname,'ui','folder','1.JPG'));
 });
