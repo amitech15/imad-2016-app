@@ -24,7 +24,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 	     changeImg=0;
 	 }
 var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow2").setAttribute("src",newImage);
+document.getEleentById("slideShow2").setAttribute("src",newImage);
 }
 
 function changeImage3(){
@@ -36,4 +36,3 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 var newImage= "/ui/sports/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow3").setAttribute("src",newImage);
 }
-
