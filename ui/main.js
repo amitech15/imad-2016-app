@@ -23,7 +23,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-var newImage= "/ui/l" + (Number(changeImg)+1) + ".jpg" ;
+var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow2").setAttribute("src",newImage);
 document.getElementById("simple").innerHTML=(newImage);
 }
