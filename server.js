@@ -29,8 +29,8 @@ app.get('/ui/main.js', function (req, res) {
 });
 */
 
-app.get('/ui/:m.jpg', function (req, res){
-   res.sendFile(path.join(__dirname,'ui/'+m+'.jpg'));
+app.get('/ui/:m', function (req, res){
+   res.sendFile(path.join(__dirname,'ui/'+m));
 });
 
 
