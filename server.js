@@ -29,8 +29,8 @@ app.get('/ui/main.js', function (req, res) {
 });
 */
 app.get('/ui/:b/:img', function (req, res) {
-    var img= re.paramps.img;
-    var a=req.paramps.a;
+    var img= req.paramps.img;
+    var b=req.paramps.a;
   res.sendFile(path.join(__dirname, 'ui/b/img'));
 });
 
