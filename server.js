@@ -29,7 +29,7 @@ app.get('/ui/main.js', function (req, res) {
 });
 */
 app.get('/ui/:b/:img', function (req, res) {
-    var img= req.paramps.img;
+    var img= re.paramps.img;
     var b=req.paramps.b;
   res.sendFile(path.join(__dirname, 'ui/b/img'));
 });
