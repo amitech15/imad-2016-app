@@ -30,7 +30,7 @@ app.get('/ui/main.js', function (req, res) {
 */
 app.get('/ui/:l.jpg', function (req, res){
    var l=req.params.l;
-  res.sendFile(path.join(__dirname,'ui','l'+'.jpg'));
+  res.sendFile(path.join(__dirname,'ui/l'+'.jpg'));
 });
 
 
