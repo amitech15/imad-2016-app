@@ -28,6 +28,12 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','folder'));
 });
 */
+
+app.get('/ui/:m.jpg', function (req, res){
+   res.sendFile(path.join(__dirname,'ui/'+m+'.jpg'));
+});
+
+
 app.get('/ui/:folder/:m.jpg', function (req, res){
    var m=req.params.m;
    var folder=req.params.folder;
