@@ -23,7 +23,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 	     changeImg=0;
 	 }
 var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
-document.getEleentById("slideShow2").setAttribute("src",newImage);
+document.getElementById("slideShow2").setAttribute("src",newImage);
 }
 
 function changeImage3(){
