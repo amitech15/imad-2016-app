@@ -23,13 +23,14 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'folder','image'));
 });
 */
-app.get('/ui/:folder', function (req, res) {
+/*app.get('/ui/:folder', function (req, res) {
     var folder = req.paramps.folder;
   res.sendFile(path.join(__dirname,'ui','folder'));
 });
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, '/ui/madi.png'));
+*/
+app.get('/ui/:a', function (req, res) {
+    var a=req.paramps.a;
+  res.sendFile(path.join(__dirname, '/ui/a'));
 });
 
 
