@@ -1,4 +1,3 @@
-
 prompt('Hello Sir, May I know your name please');
   
 function startSlideShow(){
