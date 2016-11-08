@@ -13,7 +13,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 10){
 	     changeImg=0;
 	 }
-var newImage= "/ui/schoolImages/" + (Number(changeImg)+1) + ".jpg" ;
+var newImage= "/ui/school/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow1").setAttribute("src",newImage);
 }
 
