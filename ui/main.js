@@ -25,6 +25,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+2 , imageSrc.lastInde
 	 }
 var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow2").setAttribute("src",newImage);
+document.getElementById("simple").innerHTML=("newImage");
 }
 
 function changeImage3(){
