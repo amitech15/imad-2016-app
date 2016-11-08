@@ -28,10 +28,10 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','folder'));
 });
 */
-app.get('/:a/:img', function (req, res) {
+app.get('/:a/:b/:img', function (req, res) {
     var img= re.paramps.img;
     var a=req.paramps.a;
-  res.sendFile(path.join(__dirname, '/a/img'));
+  res.sendFile(path.join(__dirname, '/a/b/img'));
 });
 
 
