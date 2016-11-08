@@ -19,7 +19,7 @@ document.getElementById("slideShow1").setAttribute("src",newImage);
 
 function changeImage2(){
 var imageSrc=document.getElementById("slideShow2").getAttribute("src");
-var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+2 , imageSrc.lastIndexOf("/")+3);
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
      if(changeImg > 4){
 	     changeImg=0;
 	 }
