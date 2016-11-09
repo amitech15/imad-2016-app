@@ -65,7 +65,7 @@ margin-right:4%;
 margin-bottom:100px;
 box-shadow:13px 13px 30px black;
 float:right;
-overflow:hidden;
+overflow:inherit;
 height:350px;
 }
 
