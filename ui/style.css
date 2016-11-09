@@ -65,8 +65,7 @@ margin-right:4%;
 margin-bottom:100px;
 box-shadow:13px 13px 30px black;
 float:right;
-overflow:auto;
-height:350px;
+height:400px;
 }
 
 
@@ -78,6 +77,10 @@ width:300px;
 .box a{
 color:black;
 text-decoration:none;	
+}
+
+.box p{
+    overflow:auto;
 }
 
 .box  p::first-letter{
