@@ -1,7 +1,3 @@
-//prompt('Hello Sir, May I know your name please');
-  
-
-  
 function startSlideShow(){
   var interval1 = setInterval(changeImage1,2000);
   var interval2 = setInterval(changeImage2,1700);
@@ -11,7 +7,7 @@ function startSlideShow(){
 }
 
 function stopSlideShow(){
-clearInterval(interval2);
+clearInterval("/ui/school/" + (Number(changeImg)+1) + ".jpg");
 }
 
 function changeImage1(){
@@ -20,8 +16,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 10){
 	     changeImg=0;
 	 }
-var newImage= "/ui/school/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow1").setAttribute("src",newImage);
+document.getElementById("slideShow1").setAttribute("src","/ui/school/" + (Number(changeImg)+1) + ".jpg");
 }
 
 function changeImage2(){
@@ -30,8 +25,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow2").setAttribute("src",newImage);
+document.getElementById("slideShow2").setAttribute("src","/ui/leadership/" + (Number(changeImg)+1) + ".jpg");
 }
 
 function changeImage3(){
@@ -40,8 +34,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-var newImage= "/ui/sports/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow3").setAttribute("src",newImage);
+document.getElementById("slideShow3").setAttribute("src","/ui/sports/" + (Number(changeImg)+1) + ".jpg");
 }
 
 function changeImage4(){
@@ -50,8 +43,7 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 10){
 	     changeImg=0;
 	 }
-var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow4").setAttribute("src",newImage);
+document.getElementById("slideShow4").setAttribute("src","/ui/college/" + (Number(changeImg)+1) + ".jpg");
 }
 
 function changeImage5(){
@@ -60,6 +52,5 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow5").setAttribute("src",newImage);
+document.getElementById("slideShow5").setAttribute("src","/ui/home/" + (Number(changeImg)+1) + ".jpg");
 }
