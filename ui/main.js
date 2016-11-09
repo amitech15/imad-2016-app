@@ -49,7 +49,7 @@ document.getElementById("slideShow4").setAttribute("src",newImage);
 }
 
 function changeImage5(){
-var imageSrc=document.getElementById("slideShow4").getAttribute("src");
+var imageSrc=document.getElementById("slideShow5").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
      if(changeImg > 4){
 	     changeImg=0;
