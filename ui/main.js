@@ -59,6 +59,6 @@ document.getElementById("slideShow5").setAttribute("src",newImage);
 }
 
 function zoom(){
-     alert('hello');
+     alert(document.getElementById('sildeShow2').value);
     
 }
