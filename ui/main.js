@@ -5,6 +5,7 @@ function startSlideShow(){
  setInterval(changeImage2,1700);
  setInterval(changeImage3,1800);
  setInterval(changeImage4,1900);
+ setInterval(changeImage5,11750);
 }
 
 function changeImage1(){
@@ -46,4 +47,15 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow4").setAttribute("src",newImage);
 }
+
+function changeImage5(){
+var imageSrc=document.getElementById("slideShow4").getAttribute("src");
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
+     if(changeImg > 5){
+	     changeImg=0;
+	 }
+var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow5").setAttribute("src",newImage);
+}
+
 
