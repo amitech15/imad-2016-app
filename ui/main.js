@@ -45,3 +45,4 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow4").setAttribute("src",newImage);
 }
+
