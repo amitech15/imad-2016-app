@@ -41,7 +41,7 @@ document.getElementById("slideShow3").setAttribute("src",newImage);
 function changeImage4(){
 var imageSrc=document.getElementById("slideShow4").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 8){
+     if(changeImg > 10){
 	     changeImg=0;
 	 }
 var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
@@ -51,7 +51,7 @@ document.getElementById("slideShow4").setAttribute("src",newImage);
 function changeImage5(){
 var imageSrc=document.getElementById("slideShow5").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 4){
+     if(changeImg > 5){
 	     changeImg=0;
 	 }
 var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
