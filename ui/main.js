@@ -1,5 +1,7 @@
 //prompt('Hello Sir, May I know your name please');
   
+ alert(document.getElementById('sildeShow2'));  
+  
 function startSlideShow(){
  setInterval(changeImage1,2000);
  setInterval(changeImage2,1700);
@@ -59,6 +61,6 @@ document.getElementById("slideShow5").setAttribute("src",newImage);
 }
 
 function zoom(){
-     alert(document.getElementById('sildeShow2').value);
+     alert(document.getElementById('sildeShow2'));
     
 }
