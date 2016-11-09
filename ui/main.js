@@ -7,7 +7,7 @@ function startSlideShow(){
 }
 
 function stopSlideShow(){
-clearInterval("/ui/school/" + (Number(changeImg)+1) + ".jpg");
+clearInterval(intervalId);
 }
 
 function changeImage1(){
