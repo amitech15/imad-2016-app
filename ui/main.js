@@ -5,7 +5,7 @@ function startSlideShow(){
  setInterval(changeImage2,1700);
  setInterval(changeImage3,1800);
  setInterval(changeImage4,1900);
- setInterval(changeImage5,11750);
+ setInterval(changeImage5,1750);
 }
 
 function changeImage1(){
