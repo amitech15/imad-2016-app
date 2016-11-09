@@ -1,13 +1,15 @@
+var interval11, interval2, interval3, interval4, interval5;
+
 function startSlideShow(){
-  var interval1 = setInterval(changeImage1,2000);
-  var intervalId = setInterval(changeImage2,1700);
-  var interval3 = setInterval(changeImage3,1800);
-  var interval4 = setInterval(changeImage4,1900);
-  var interval5 = setInterval(changeImage5,1750);
+  interval1 = setInterval(changeImage1,2000);
+  interval2 = setInterval(changeImage2,1700);
+  interval3 = setInterval(changeImage3,1800);
+  interval4 = setInterval(changeImage4,1900);
+  interval5 = setInterval(changeImage5,1750);
 }
 
 function stopSlideShow(){
-clearInterval(intervalId);
+clearInterval(interval2);
 }
 
 function changeImage1(){
