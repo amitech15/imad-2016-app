@@ -58,4 +58,8 @@ var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow5").setAttribute("src",newImage);
 }
 
-
+function zoom(){
+     alert('hello');
+    
+}
+}
