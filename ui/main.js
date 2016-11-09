@@ -1,6 +1,6 @@
 //prompt('Hello Sir, May I know your name please');
   
- alert(document.getElementById('http://amitnptel.imad.hasura-app.io/ui/leadership/1.jpg'));  
+ alert(document.getElementById(http://amitnptel.imad.hasura-app.io/ui/leadership/1.jpg));  
   
 function startSlideShow(){
  setInterval(changeImage1,2000);
