@@ -10,6 +10,10 @@ function startSlideShow(){
   var Interval5 = setInterval(changeImage5,1750);
 }
 
+function stopSlideShow(){
+clearInterval(interval2);
+}
+
 function changeImage1(){
 var imageSrc=document.getElementById("slideShow1").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
