@@ -1,4 +1,4 @@
-prompt('Hello Sir, May I know your name please');
+//prompt('Hello Sir, May I know your name please');
   
 function startSlideShow(){
  setInterval(changeImage1,2000);
