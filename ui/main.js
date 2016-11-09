@@ -3,11 +3,11 @@
 
   
 function startSlideShow(){
-  var Interval1 = setInterval(changeImage1,2000);
-  var Interval2 =  setInterval(changeImage2,1700);
-  var Interval3 = setInterval(changeImage3,1800);
-  var Interval4 = setInterval(changeImage4,1900);
-  var Interval5 = setInterval(changeImage5,1750);
+  var interval1 = setInterval(changeImage1,2000);
+  var interval2 =  setInterval(changeImage2,1700);
+  var interval3 = setInterval(changeImage3,1800);
+  var interval4 = setInterval(changeImage4,1900);
+  var interval5 = setInterval(changeImage5,1750);
 }
 
 function stopSlideShow(){
