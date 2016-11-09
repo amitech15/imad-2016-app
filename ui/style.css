@@ -86,6 +86,7 @@ text-decoration:none;
 
 .box  p::first-letter{
 font-size:50px;
+color:red;
 }
  
 .box:hover {
