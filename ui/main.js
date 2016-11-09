@@ -59,4 +59,3 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow5").setAttribute("src",newImage);
 }
-
