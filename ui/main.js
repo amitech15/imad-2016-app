@@ -2,8 +2,9 @@ prompt('Hello Sir, May I know your name please');
   
 function startSlideShow(){
  setInterval(changeImage1,2000);
- setInterval(changeImage2,1800);
- setInterval(changeImage3,1600);
+ setInterval(changeImage2,1700);
+ setInterval(changeImage3,1800);
+ setInterval(changeImage4,1900);
 }
 
 function changeImage1(){
@@ -39,7 +40,7 @@ document.getElementById("slideShow3").setAttribute("src",newImage);
 function changeImage4(){
 var imageSrc=document.getElementById("slideShow4").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 10){
+     if(changeImg > 9){
 	     changeImg=0;
 	 }
 var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
