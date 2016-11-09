@@ -1,15 +1,9 @@
-var interval11, interval2, interval3, interval4, interval5;
-
 function startSlideShow(){
-  interval1 = setInterval(changeImage1,2000);
-  interval2 = setInterval(changeImage2,1700);
-  interval3 = setInterval(changeImage3,1800);
-  interval4 = setInterval(changeImage4,1900);
-  interval5 = setInterval(changeImage5,1750);
-}
-
-function stopSlideShow(){
-clearInterval(interval2);
+ setInterval(changeImage1,2000);
+ setInterval(changeImage2,1700);
+ setInterval(changeImage3,1800);
+ setInterval(changeImage4,1900);
+ setInterval(changeImage5,1750);
 }
 
 function changeImage1(){
@@ -18,7 +12,8 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 10){
 	     changeImg=0;
 	 }
-document.getElementById("slideShow1").setAttribute("src","/ui/school/" + (Number(changeImg)+1) + ".jpg");
+var newImage= "/ui/school/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow1").setAttribute("src",newImage);
 }
 
 function changeImage2(){
@@ -27,7 +22,8 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-document.getElementById("slideShow2").setAttribute("src","/ui/leadership/" + (Number(changeImg)+1) + ".jpg");
+var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow2").setAttribute("src",newImage);
 }
 
 function changeImage3(){
@@ -36,7 +32,8 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-document.getElementById("slideShow3").setAttribute("src","/ui/sports/" + (Number(changeImg)+1) + ".jpg");
+var newImage= "/ui/sports/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow3").setAttribute("src",newImage);
 }
 
 function changeImage4(){
@@ -45,7 +42,8 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 10){
 	     changeImg=0;
 	 }
-document.getElementById("slideShow4").setAttribute("src","/ui/college/" + (Number(changeImg)+1) + ".jpg");
+var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow4").setAttribute("src",newImage);
 }
 
 function changeImage5(){
@@ -54,5 +52,6 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
      if(changeImg > 4){
 	     changeImg=0;
 	 }
-document.getElementById("slideShow5").setAttribute("src","/ui/home/" + (Number(changeImg)+1) + ".jpg");
+var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow5").setAttribute("src",newImage);
 }
