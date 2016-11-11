@@ -9,7 +9,7 @@ function startSlideShow(){
 function changeImage1(){
 var imageSrc=document.getElementById("slideShow1").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 10){
+     if(changeImg > 9){
 	     changeImg=0;
 	 }
 var newImage= "/ui/school/" + (Number(changeImg)+1) + ".jpg" ;
@@ -19,7 +19,7 @@ document.getElementById("slideShow1").setAttribute("src",newImage);
 function changeImage2(){
 var imageSrc=document.getElementById("slideShow2").getAttribute("src");
 var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 4){
+     if(changeImg > 5){
 	     changeImg=0;
 	 }
 var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
