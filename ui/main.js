@@ -1,24 +1,57 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
+function startSlideShow(){
+ setInterval(changeImage1,20000);
+ setInterval(changeImage2,1700);
+ setInterval(changeImage3,1800);
+ setInterval(changeImage4,1900);
+ setInterval(changeImage5,1750);
+}
 
-var app = express();
-app.use(morgan('combined'));
+function changeImage1(){
+var imageSrc=document.getElementById("slideShow1").getAttribute("src");
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
+     if(changeImg > 10){
+	     changeImg=0;
+	 }
+var newImage= "/ui/school/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow1").setAttribute("src",newImage);
+}
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+function changeImage2(){
+var imageSrc=document.getElementById("slideShow2").getAttribute("src");
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
+     if(changeImg > 4){
+	     changeImg=0;
+	 }
+var newImage= "/ui/leadership/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow2").setAttribute("src",newImage);
+}
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
+function changeImage3(){
+var imageSrc=document.getElementById("slideShow3").getAttribute("src");
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
+     if(changeImg > 4){
+	     changeImg=0;
+	 }
+var newImage= "/ui/sports/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow3").setAttribute("src",newImage);
+}
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
+function changeImage4(){
+var imageSrc=document.getElementById("slideShow4").getAttribute("src");
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
+     if(changeImg > 10){
+	     changeImg=0;
+	 }
+var newImage= "/ui/college/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow4").setAttribute("src",newImage);
+}
 
-
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
-});
+function changeImage5(){
+var imageSrc=document.getElementById("slideShow5").getAttribute("src");
+var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
+     if(changeImg > 4){
+	     changeImg=0;
+	 }
+var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
+document.getElementById("slideShow5").setAttribute("src",newImage);
+}
