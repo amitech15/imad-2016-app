@@ -1,7 +1,3 @@
-prompt('may i know your name please');
-
-alert('hello! may ur visit be a memorable one');
-
 function startSlideShow(){
  setInterval(changeImage1,2000);
  setInterval(changeImage2,1700);
