@@ -1,3 +1,5 @@
+prompt('may i know your name please');
+
 function startSlideShow(){
  setInterval(changeImage1,2000);
  setInterval(changeImage2,1700);
