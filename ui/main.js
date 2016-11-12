@@ -60,3 +60,7 @@ document.getElementById("slideShow5").setAttribute("src",newImage);
 function stop(){
 clearInterval(i);    
 }
+
+function start(){
+    startSlideShow();
+}
