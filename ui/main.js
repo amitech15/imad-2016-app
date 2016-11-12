@@ -62,7 +62,3 @@ document.getElementById("slideShow5").setAttribute("src",newImage);
 function stop(n){
 clearInterval(i[n]);    
 }
-
-function start(){
-    startSlideShow();
-}
