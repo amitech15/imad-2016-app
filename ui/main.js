@@ -1,10 +1,10 @@
-var i;
+var i[5],n;
 function startSlideShow(){
-i= setInterval(changeImage1,2000);
- setInterval(changeImage2,1700);
- setInterval(changeImage3,1800);
- setInterval(changeImage4,1900);
- setInterval(changeImage5,1750);
+  i[1] = setInterval(changeImage1,2000);
+  i[2] = setInterval(changeImage2,1700);
+  i[3] = setInterval(changeImage3,1800);
+  i[4] = setInterval(changeImage4,1900);
+  i[5] = setInterval(changeImage5,1750);
 }
 
 function changeImage1(){
@@ -57,8 +57,8 @@ var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow5").setAttribute("src",newImage);
 }
 
-function stop(){
-clearInterval(i);    
+function stop(n){
+clearInterval(i[n]);    
 }
 
 function start(){
