@@ -1,4 +1,5 @@
-
+var n;
+var i=[];
 
 function startSlideShow(){
   i[1] = setInterval(changeImage1,2000);
