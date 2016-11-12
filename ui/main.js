@@ -1,5 +1,6 @@
+var i;
 function startSlideShow(){
- setInterval(changeImage1,2000);
+i= setInterval(changeImage1,2000);
  setInterval(changeImage2,1700);
  setInterval(changeImage3,1800);
  setInterval(changeImage4,1900);
@@ -54,4 +55,8 @@ var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastInde
 	 }
 var newImage= "/ui/home/" + (Number(changeImg)+1) + ".jpg" ;
 document.getElementById("slideShow5").setAttribute("src",newImage);
+}
+
+function stop(){
+clearInterval(i);    
 }
