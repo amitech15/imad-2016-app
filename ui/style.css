@@ -89,7 +89,7 @@ color:red;
 background-color:rgb(0,187,187);
 background:linear-gradient(yellow,rgb(0,187,187));
 font-size:18px;
-text-shadow:1px black;
+text-shadow:2px 2px black;
 }
 
 p:hover{
