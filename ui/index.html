@@ -6,48 +6,6 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link type="text/javascript"  href="main.js">
 
-<script type="text/javascript">
-   
-function startSlideShow(){
- setInterval(changeImage1,2000);
- setInterval(changeImage2,1800);
- setInterval(changeImage3,1600);
-}
-
-function changeImage1(){
-
-var imageSrc=document.getElementById("slideShow1").getAttribute("src");
-var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 10){
-	     changeImg=0;
-	 }
-var newImage= "C:/Users/dell/Desktop/website/schoolImages/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow1").setAttribute("src",newImage);
-}
-
-function changeImage2(){
-
-var imageSrc=document.getElementById("slideShow2").getAttribute("src");
-var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 4){
-	     changeImg=0;
-	 }
-var newImage= "C:/Users/dell/Desktop/website/leadership/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow2").setAttribute("src",newImage);
-}
-
-function changeImage3(){
-
-var imageSrc=document.getElementById("slideShow3").getAttribute("src");
-var changeImg=imageSrc.substring(imageSrc.lastIndexOf("/")+1 , imageSrc.lastIndexOf("/")+2);
-     if(changeImg > 4){
-	     changeImg=0;
-	 }
-var newImage= "C:/Users/dell/Desktop/website/sports/" + (Number(changeImg)+1) + ".jpg" ;
-document.getElementById("slideShow3").setAttribute("src",newImage);
-}
-
-</script>
 
 </head>
 
@@ -67,12 +25,10 @@ document.getElementById("slideShow3").setAttribute("src",newImage);
 
 </div>
 
-<img src="AlsterPanorama1.jpg" height=280px width=1430px text="amit">
-
 <hr height=10px width=85% align="center">
 
 <div class="box">
-<a href="http://www.sainikschooltilaiya.org/"  ><img src="C:/Users/dell/Desktop/website/leadership/1.jpg" id="slideShow2"></a>
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/leadership/1.jpg" id="slideShow2"></a>
 <p>The place where I spent the crucial seven years of my life. 
 Gaining a lot this palce turned out to be one of the memorable 
 places i have ever lived at. Residing in this school was full of 
@@ -80,7 +36,7 @@ thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p>
 </div>
 
 <div class="box" >
-<a href="http://www.sainikschooltilaiya.org/"  ><img src="C:/Users/dell/Desktop/website/sports/1.jpg" id="slideShow3"></a>
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/sports/1.jpg" id="slideShow3"></a>
 <p>The symbol of valour. It symbolises the enthusiasm and the spirit 
 of the students to do anything for their country. Even the country is 
 proud to have students from SIANIK SCHOOL TILAIYA. History has
@@ -88,7 +44,7 @@ witnessed numerous talents evolving out of this great institution</p>
 </div>
 
 <div class="box">
-<a href="http://www.sainikschooltilaiya.org/"  ><img src="C:/Users/dell/Desktop/website/schoolImages/1.jpg" id="slideShow1"></a>
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/schoolImages/1.jpg" id="slideShow1"></a>
 <p>The place where I spent the crucial seven years of my life. 
 Gaining a lot this palce turned out to be one of the memorable 
 places i have ever lived at. Residing in this school was full of 
@@ -96,7 +52,7 @@ thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p>
 </div>
 
 <div class="box">
-<a href="http://www.sainikschooltilaiya.org/"  ><img class="image" src=investiture.jpg></a>
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/home/1.jpg" id="slideShow4"></a>
 <p>The place where I spent the crucial seven years of my life. 
 Gaining a lot this palce turned out to be one of the memorable 
 places i have ever lived at. Residing in this school was full of 
@@ -104,7 +60,7 @@ thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p>
 </div>
 
 <div class="box">
-<a href="http://www.sainikschooltilaiya.org/"  ><img class="image" src=school.jpg></a>
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/college/1.jpg" id="slideShow5"></a>
 <p>The place where I spent the crucial seven years of my life. 
 Gaining a lot this palce turned out to be one of the memorable 
 places i have ever lived at. Residing in this school was full of 
