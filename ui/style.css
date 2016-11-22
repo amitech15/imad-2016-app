@@ -79,10 +79,6 @@ color:black;
 text-decoration:none;	
 }
 
-.box p{
-font-family:Lucida Calligraphy;    
-}
-
 .box  p::first-letter{
 font-size:50px;
 color:red;
@@ -93,7 +89,7 @@ background-color:rgb(0,187,187);
 background:linear-gradient(yellow,rgb(0,187,187));
 font-size:15px;
 font-style:italic;
-font-family:Harrington;
+font-family:Lucida Calligraphy,Harrington;
 }
 
 p:hover{
