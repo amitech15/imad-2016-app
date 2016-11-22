@@ -1,16 +1,21 @@
 var n;
 var i=[];
 
-function startSlideShow1(n){
-    i[n] = setInterval(changeImage + n ,2000);
+function startSlideShow1(){
+    clearInterval(i[1]);
+    clearInterval(i[2]);
+    clearInterval(i[3]);
+    clearInterval(i[4]);
+    clearInterval(i[5]);
+    startSlideShow();
 }
 
 function startSlideShow(){
   i[1] = setInterval(changeImage1,2000);
-  i[2] = setInterval(changeImage2,1900);
-  i[3] = setInterval(changeImage3,1880);
-  i[4] = setInterval(changeImage4,1920);
-  i[5] = setInterval(changeImage5,1960);
+  i[2] = setInterval(changeImage2,1700);
+  i[3] = setInterval(changeImage3,1800);
+  i[4] = setInterval(changeImage4,1900);
+  i[5] = setInterval(changeImage5,1750);
 }
 
 function changeImage1(){
