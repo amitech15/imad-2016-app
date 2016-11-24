@@ -2,6 +2,7 @@ var n;
 var i=[];
 
 function post(){
+    alert('hello');
     prompt('Hello Sir, Please write your post here');
 }
 
