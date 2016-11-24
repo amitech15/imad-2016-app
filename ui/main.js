@@ -1,7 +1,7 @@
 var n;
 var i=[];
 
-function post{
+function post(){
     prompt('Hello Sir, Please write your post here');
 }
 
