@@ -1,6 +1,10 @@
 var n;
 var i=[];
 
+function post{
+    prompt('Hello Sir, Please write your post here');
+}
+
 function startSlideShow1(){
     clearInterval(i[1]);
     clearInterval(i[2]);
