@@ -1,137 +1,102 @@
-body{
-color:black;
-margin:0px;
-font-size:15px;
-}
+<html>
 
-/*********************************************************************************************
-                                              header
-*********************************************************************************************/
+<head>
+<title> My Personal Blog</title>
 
-#header{
-font-family:Castellar,Bradley Hand ITC,Book Antiqua,Bookman Old Style;
-margin:10px;
-font-size:30px;
-margin-top:20px;
-text-align:center;
-background-color:lightblue;
-border-radius:5px;
-}
+<link rel="stylesheet" type="text/css" href="/ui/style.css">
+<link type="text/javascript"  href="main.js">
+
+<script type="text/javascript" src="/ui/main.js">
+        </script>
+
+<mata name="viewport" content="width=device-width, initial-scale=1"/>
+
+</head>
+
+<body onLoad="startSlideShow()">
+
+<div id="header">
+
+<ul>
+	<li><a href=""> Home </li>
+	<li><a href=""> Lifestyle </a></li>
+	<li><a href=""> Music </a></li>
+	<li><a href=""> About </a></li>
+	<li><a href=""> Contact Me </a></li>
+</ul>
+
+</div>
+
+<hr height=10px width=85% align="center">
+
+<div class="box">
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/leadership/1.jpg" id="slideShow2" onMouseOver=stop(2) 
+                                                                  onMouseOut=startSlideShow1() ></a>
+<p>SAINIK SCHOOL TILAIYA - The place where I spent the crucial seven years of my life. 
+Gaining a lot this palce turned out to be one of the memorable 
+places i have ever lived at. Residing in this school was full of 
+thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p> 
+</div>
+
+<div class="box" >
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/sports/1.jpg" id="slideShow3" onMouseOver=stop(3) 
+                                                                  onMouseOut=startSlideShow1() ></a>
+<p>The symbol of valour. It symbolises the enthusiasm and the spirit 
+of the students to do anything for their country. Even the country is 
+proud to have students from SAINIK SCHOOL TILAIYA. History has
+witnessed numerous talents evolving out of this great institution</p>
+</div>
+
+<div class="box">
+<a href="http://www.sainikschooltilaiya.org/"  ><img src="/ui/school/1.jpg" id="slideShow1" onMouseOver=stop(1) 
+                                                                  onMouseOut=startSlideShow1() ></a>
+<p>The place where I spent the crucial seven years of my life. 
+Gaining a lot this palce turned out to be one of the memorable 
+places i have ever lived at. Residing in this school was full of 
+thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p>
+</div>
+
+<div class="box">
+<a href="http://www.becs.ac.in/"  ><img src=/ui/college/1.jpg id="slideShow4" onMouseOver=stop(4)
+                                                                  onMouseOut=startSlideShow1() ></a>
+<p>INDIAN INSTITUTE OF ENGINEERING SCIENCE AND TECHNOLOGY - the place 
+where I am presently persuing my B.Tech course. Its really awesome to 
+be in one of the India's best institute.This institue, established in
+1856, has been a role model to many. It is India's second oldest engineering college.</p> 
+</div>
+
+<div class="box">
+<a href="http://www.sainikschooltilaiya.org/"  ><img src=/ui/home/1.jpg id="slideShow5" onMouseOver=stop(5) 
+                                                                     onMouseOut=startSlideShow1() ></a>
+<p>The place where I spent the crucial seven years of my life. 
+Gaining a lot this palce turned out to be one of the memorable 
+places i have ever lived at. Residing in this school was full of 
+thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p>
+</div>
+
+<div class="box">
+<a href="http://www.sainikschooltilaiya.org/"  ><img class="image" src=/ui/school/1.jpg></a>
+<p>The place where I spent the crucial seven years of my life. 
+Gaining a lot this palce turned out to be one of the memorable 
+places i have ever lived at. Residing in this school was full of 
+thoughts of all sorts, be it knowledgable, fun, enthusiasm and many more. </p>
+</div>
 
 
-#header #search{
-float:right;
-text-align:right;
-display:inline;
-margin-right:20px;
-}
+<div id="footer">
 
-#header ul{
-list-style-type:none;
-}
+<ul>
+   <li><a href=""> About Us </a></li>
+   <li><a href=""> Carrier </a></li>
+   <li><a href=""> Help </a></li>
+   <li><a href=""> Reach Us </a></li>
+   <li><a href=""> Address </a></li>
+</ul>   
 
-#header ul li{
-display:inline;
-padding:15px;
-font-weight:bold;
-margin-left:10px;
-margin-right:10px;
-list-style-type:none;
-}
+&copy; Amit Kumar. All rights reserved.
 
-#header ul li a{
-color:black;
-font-weight:bold;
-padding-left:10px;
-padding-right:10px;
-list-style-type:none;
-text-decoration:none;
-}
+</div
 
-#header ul li a:hover {
-text-shadow:3px 3px  5px orange;
-} 
+</body>
 
-/*********************************************************************************************
-                                              boxes
-*********************************************************************************************/
-
-.box{
-width:300px;
-height:430px;
-padding:10px;
-margin-top:50px;
-margin-left:3%;
-margin-right:4%;
-margin-bottom:100px;
-box-shadow:13px 13px 30px black;
-float:right;
-}
-
-
-img{
-height:200px;
-width:300px;
-}
-
-.box a{
-color:black;
-text-decoration:none;	
-}
-
-.box p{
-font-size:1px;	
-}
-
-.box  p::first-letter{
-font-size:5px;
-color:red;
-}
- 
-.box:hover {
-background-color:rgb(0,187,187);
-background:linear-gradient(yellow,rgb(0,187,187));
-font-size:1px;
-
-font-family:Lucida Calligraphy,Harrington;
-}
-
-p:hover{
-text-shadow:2px black;
-}
-
-/****************************************************
-                      F O O T E R
-******************************************************/
-
-#footer{
-height:80px;
-clear:both;
-border-radius:5px;
-background-color:rgb(15,0,102);
-color:white;
-text-align:center;
-}
-
-#footer ul {
-text-align:center;
-padding:5px;
-}
-
-#footer ul li {
-list-style-type:none;
-
-display:inline;
-padding:10px;
-}
-
-#footer ul li a {
-text-decoration:none;
-color:white;
-opacity:0.5;
-font-size:115%;
-}
-
-#footer ul li a:hover {
-opacity:1;
-}
+</html>
